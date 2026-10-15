@@ -1,0 +1,22 @@
+# version: '3.8'
+
+# https://hub.docker.com/r/gvenzl/oracle-free
+
+services:
+  oracle:
+    container_name: "oracle"
+    #image: "container-registry.oracle.com/database/free:latest"
+    image: "gvenzl/oracle-free:latest"
+    restart: "unless-stopped"
+    ports: 
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: "password" # specifies the password for the Oracle Database SYS and SYSTEM users.
+      APP_USER: "ja"
+      APP_USER_PASSWORD: "123"
+    volumes:
+      - oracle-data:/opt/oracle/oradata # volume managed by docker `docker volume inspect oracle-data` to inspect locations
+      # - ./oracle-data:/opt/oracle/oradata # mounted from system filesystem
+
+volumes:
+  oracle-data:
