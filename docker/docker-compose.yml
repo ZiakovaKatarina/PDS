@@ -11,12 +11,14 @@ services:
     ports: 
       - "1521:1521"
     environment:
-      ORACLE_PASSWORD: "password" # specifies the password for the Oracle Database SYS and SYSTEM users.
-      APP_USER: "ja"
-      APP_USER_PASSWORD: "123"
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD}  # specifies the password for the Oracle Database SYS and SYSTEM users.
+      APP_USER: ${APP_USER}
+      APP_USER_PASSWORD: ${APP_USER_PASSWORD}
     volumes:
       - oracle-data:/opt/oracle/oradata # volume managed by docker `docker volume inspect oracle-data` to inspect locations
       # - ./oracle-data:/opt/oracle/oradata # mounted from system filesystem
+      - ./init:/container-entrypoint-initdb.d:ro
+      #- ./init:/container-entrypoint-initdb.d
 
 volumes:
   oracle-data:
