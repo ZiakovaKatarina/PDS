@@ -19,7 +19,7 @@ Spusti start.sh
 
 ---
 *alebo manuálne*
-1. Uistisa, že docker.service alebo docker.socket sú aktívne
+1. Uistisa, že `docker.service` alebo `docker.socket` sú aktívne
 2. ```docker compose up -d```
 
 ---

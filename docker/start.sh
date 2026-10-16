@@ -22,7 +22,7 @@ if [ "$#" -ge 1 ]; then
    fi         
 fi
 echo "       Starting"
-docker compose up --watch
+docker compose up -d
 
 
 
