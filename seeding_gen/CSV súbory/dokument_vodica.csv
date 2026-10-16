@@ -1,0 +1,21 @@
+﻿dokument_id,osobne_cislo_vodica,typ_dokumentu,datum_vydania,platnost_do,vysledok,nazov_suboru,typ_suboru,obsah,nahrane_at,popis
+1,VOD-2023-001,VODICSKY_PREUKAZ,2020-05-10,2030-05-10,,vodicak_kovac.pdf,pdf,,2023-01-10 09:15:00,Vodičský preukaz sk. D
+2,VOD-2023-002,PSYCHOTEST,2023-02-15,2028-02-15,VYHOVEL,psychotest_novak.pdf,pdf,,2023-02-16 11:20:00,Dopravno-psychologické vyšetrenie
+3,VOD-2023-003,ZDRAVOTNE_POTVRDENIE,2023-04-01,2028-04-01,VYHOVEL,lekarska_prehliadka_horvath.jpg,jpg,,2023-04-02 08:00:00,Lekárska prehliadka o spôsobilosti
+4,VOD-2023-004,KVALIFIKACNY_PREUKAZ,2022-09-12,2027-09-12,,kkv_varga.pdf,pdf,,2023-01-11 14:10:00,Kvalifikačná karta vodiča (KKV)
+5,VOD-2023-005,POTVRDENIE_SKOLENIA,2023-06-20,2024-06-20,VYHOVEL,skolenie_toth.pdf,pdf,,2023-06-21 10:45:00,Pravidelné školenie BOZP
+6,VOD-2023-006,VODICSKY_PREUKAZ,2019-11-05,2029-11-05,,vp_nagy.pdf,pdf,,2023-01-15 13:00:00,Sken vodičského preukazu
+7,VOD-2023-007,PSYCHOTEST,2022-08-14,2027-08-14,VYHOVEL,psycho_molnar.pdf,pdf,,2023-01-12 16:30:00,Periodický psychotest
+8,VOD-2023-008,PSYCHOTEST,2023-03-10,,NEVYHOVEL,psycho_balaz_nevyhovel.pdf,pdf,,2023-03-11 09:00:00,Nevyhovel pri psychologickom teste
+9,VOD-2023-009,ZDRAVOTNE_POTVRDENIE,2024-01-10,2029-01-10,VYHOVEL,zdravie_szabo.png,png,,2024-01-11 15:20:00,Lekárske potvrdenie
+10,VOD-2023-010,KVALIFIKACNY_PREUKAZ,2021-07-22,2026-07-22,,kkv_lukac.pdf,pdf,,2023-01-20 12:15:00,KKV pre autobusovú dopravu
+11,VOD-2023-011,INE,2023-05-18,,,potvrdenie_prax_kollar.pdf,pdf,,2023-05-19 10:00:00,Potvrdenie o predchádzajúcej praxi
+12,VOD-2023-012,POTVRDENIE_SKOLENIA,2023-10-05,2024-10-05,VYHOVEL,prva_pomoc_bielik.pdf,pdf,,2023-10-06 08:45:00,Kurz prvej pomoci
+13,VOD-2023-013,VODICSKY_PREUKAZ,2018-03-25,2028-03-25,,vp_krajcik.jpg,jpg,,2023-02-01 11:10:00,Fotokópia VP
+14,VOD-2023-014,PSYCHOTEST,2023-11-12,2028-11-12,VYHOVEL,psychotest_urban.pdf,pdf,,2023-11-13 14:05:00,Dopravná psychológia
+15,VOD-2023-015,ZDRAVOTNE_POTVRDENIE,2023-09-01,2028-09-01,VYHOVEL,lekar_sevcik.pdf,pdf,,2023-09-02 09:30:00,Lekárska prehliadka spôsobilosti
+16,VOD-2023-016,KVALIFIKACNY_PREUKAZ,2022-12-01,2027-12-01,,kkv_polak.pdf,pdf,,2023-01-08 10:15:00,Kvalifikačná karta vodiča
+17,VOD-2023-017,POTVRDENIE_SKOLENIA,2024-02-14,2025-02-14,VYHOVEL,bezpecnost_kral.pdf,pdf,,2024-02-15 16:40:00,Školenie vodičov z povolania
+18,VOD-2023-018,ZDRAVOTNE_POTVRDENIE,2023-04-18,,NEVYHOVEL,lekar_hudak.pdf,pdf,,2023-04-19 13:50:00,Dočasná zdravotná nespôsobilosť
+19,VOD-2023-019,VODICSKY_PREUKAZ,2021-06-30,2031-06-30,,vp_gaspar.png,png,,2023-03-10 11:00:00,Nový vodičský preukaz
+20,VOD-2023-020,PSYCHOTEST,2024-03-01,2029-03-01,VYHOVEL,psycho_oravec.pdf,pdf,,2024-03-02 08:25:00,Vstupné psychotesty

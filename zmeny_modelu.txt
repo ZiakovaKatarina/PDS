@@ -1,1 +1,12 @@
 DOKUMENT_VODICA.POPIS: blob -> DOKUMENT_VODICA.POPIS: varchar(100)
+DOKUMENT_VODICA.OBSAH -> can be null
+
+JAZDA.linka_id: number(10) -> varchar(10)
+LINKA.linka_id: number(10) -> varchar(10) # nesedelo s csv
+
+LINKA.nazov -> removed  # nesedelo s csv
+
+ZASTAVKA.psc: varchar2(5) -> varchar2(6) # mezerav v psc
+
+
+premenovany stlpec v ZASTAVKA csv -> bezbarierovy_pristup 
