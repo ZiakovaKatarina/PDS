@@ -6,7 +6,7 @@ services:
   oracle:
     container_name: "oracle"
     #image: "container-registry.oracle.com/database/free:latest"
-    image: "gvenzl/oracle-free:latest"
+    image: "gvenzl/oracle-free:latest"  # version 21 is not supported
     restart: "unless-stopped"
     ports: 
       - "1521:1521"

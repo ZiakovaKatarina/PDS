@@ -15,7 +15,7 @@ CREATE TABLE "LINKA" (
 
 CREATE TABLE "VOZIDLO" (
   "vin_cislo_vozidla" varchar(17) PRIMARY KEY NOT NULL,
-  "typ_vozidla" nvarchar2(255) NOT NULL CHECK ("typ_vozidla" IN ('MINIBUS', 'STANDARDNY', 'KLBOVY', 'DVOJPODLAZNY')) NOT NULL,
+  "typ_vozidla" nvarchar2(255) NOT NULL CHECK ("typ_vozidla" IN ('MINIBUS', 'STANDARDNY', 'KLBOVY', 'DVOJPODLAZNY')),
   "spz" varchar2(7) UNIQUE NOT NULL,
   "kapacita" number(3) NOT NULL,
   "aktivne" number(1) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE "JAZDA" (
   "vin_cislo_vozidla" varchar(17) NOT NULL,
   "linka_id" number(10) NOT NULL,
   "osobne_cislo_vodica" varchar(30) NOT NULL,
-  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('PLANOVANA', 'PREBIEHA', 'DOKONCENA', 'ZRUSENA')) NOT NULL,
+  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('PLANOVANA', 'PREBIEHA', 'DOKONCENA', 'ZRUSENA')),
   "planovany_odchod" timestamp NOT NULL
 );
 
@@ -55,7 +55,7 @@ CREATE TABLE "PREJAZD_ZASTAVKOU" (
 
 CREATE TABLE "TARIFA" (
   "tarifa_id" number(10) PRIMARY KEY NOT NULL,
-  "typ_tarify" nvarchar2(255) NOT NULL CHECK ("typ_tarify" IN ('PLNE', 'DETSKA', 'STUDENTSKA', 'SENIORSKA', 'INE_ZLAVNENE')) NOT NULL,
+  "typ_tarify" nvarchar2(255) NOT NULL CHECK ("typ_tarify" IN ('PLNE', 'DETSKA', 'STUDENTSKA', 'SENIORSKA', 'INE_ZLAVNENE')),
   "platnost_od" date NOT NULL,
   "platnost_do" date NOT NULL,
   "vzdialenost_od_km" number(10,3) NOT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE "LISTOK" (
   "tarifa_id" number(10) NOT NULL,
   "predane_at" timestamp NOT NULL,
   "uctovana_cena_eur" number(10,2) NOT NULL,
-  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('PLATNY', 'STORNOVANY')) NOT NULL,
+  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('PLATNY', 'STORNOVANY')),
   "stornovane_at" timestamp
 );
 
@@ -79,14 +79,14 @@ CREATE TABLE "UDALOST" (
   "udalost_id" number(10) PRIMARY KEY NOT NULL,
   "vin_cislo_vozidla" varchar(17) NOT NULL,
   "osobne_cislo_vodica" varchar2(30),
-  "typ" nvarchar2(255) NOT NULL CHECK ("typ" IN ('ZAVADA', 'PORUCHA', 'INCIDENT')) NOT NULL,
+  "typ" nvarchar2(255) NOT NULL CHECK ("typ" IN ('ZAVADA', 'PORUCHA', 'INCIDENT')),
   "vznik_at" timestamp NOT NULL,
   "nahlasene_at" timestamp NOT NULL,
   "nazov" varchar2(150) NOT NULL,
   "popis" clob NOT NULL,
-  "zavaznost" nvarchar2(255) NOT NULL CHECK ("zavaznost" IN ('NIZKA', 'STREDNA', 'VYSOKA', 'KRITICKA')) NOT NULL,
+  "zavaznost" nvarchar2(255) NOT NULL CHECK ("zavaznost" IN ('NIZKA', 'STREDNA', 'VYSOKA', 'KRITICKA')),
   "blokuje_prevadzku" number(1) NOT NULL,
-  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('NAHLASENA', 'V_RIESENI', 'UZAVRETA')) NOT NULL,
+  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('NAHLASENA', 'V_RIESENI', 'UZAVRETA')),
   "uzavrete_at" timestamp
 );
 
@@ -94,12 +94,12 @@ CREATE TABLE "SERVISNY_ZASAH" (
   "zasah_id" number(10) PRIMARY KEY NOT NULL,
   "vin_cislo_vozidla" varchar(17) NOT NULL,
   "udalost_id" number(10),
-  "typ" nvarchar2(255) NOT NULL CHECK ("typ" IN ('OPRAVA', 'PRAVIDELNA_KONTROLA', 'STK', 'EK', 'UDRZBA')) NOT NULL,
+  "typ" nvarchar2(255) NOT NULL CHECK ("typ" IN ('OPRAVA', 'PRAVIDELNA_KONTROLA', 'STK', 'EK', 'UDRZBA')),
   "planovany_zaciatok" timestamp NOT NULL,
   "planovany_koniec" timestamp NOT NULL,
   "skutocny_zaciatok" timestamp,
   "skutocny_koniec" timestamp,
-  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('PLANOVANY', 'PREBIEHA', 'DOKONCENY', 'ZRUSENY')) NOT NULL,
+  "stav" nvarchar2(255) NOT NULL CHECK ("stav" IN ('PLANOVANY', 'PREBIEHA', 'DOKONCENY', 'ZRUSENY')),
   "servis" varchar2(150),
   "popis_prac" clob,
   "naklady_eur" number(12,2)
@@ -108,12 +108,12 @@ CREATE TABLE "SERVISNY_ZASAH" (
 CREATE TABLE "DOKUMENT_VODICA" (
   "dokument_id" number(10) PRIMARY KEY NOT NULL,
   "osobne_cislo_vodica" varchar2(30) NOT NULL,
-  "typ_dokumentu" nvarchar2(255) NOT NULL CHECK ("typ_dokumentu" IN ('VODICSKY_PREUKAZ', 'PSYCHOTEST', 'ZDRAVOTNE_POTVRDENIE', 'KVALIFIKACNY_PREUKAZ', 'POTVRDENIE_SKOLENIA', 'INE')) NOT NULL,
+  "typ_dokumentu" nvarchar2(255) NOT NULL CHECK ("typ_dokumentu" IN ('VODICSKY_PREUKAZ', 'PSYCHOTEST', 'ZDRAVOTNE_POTVRDENIE', 'KVALIFIKACNY_PREUKAZ', 'POTVRDENIE_SKOLENIA', 'INE')),
   "datum_vydania" date NOT NULL,
   "platnost_do" date,
   "vysledok" nvarchar2(255) NOT NULL CHECK ("vysledok" IN ('VYHOVEL', 'NEVYHOVEL')),
   "nazov_suboru" varchar2(255) NOT NULL,
-  "typ_suboru" nvarchar2(255) NOT NULL CHECK ("typ_suboru" IN ('pdf', 'jpg', 'png', 'txt')) NOT NULL,
+  "typ_suboru" nvarchar2(255) NOT NULL CHECK ("typ_suboru" IN ('pdf', 'jpg', 'png', 'txt')),
   "obsah" blob NOT NULL,
   "nahrane_at" timestamp NOT NULL,
   "popis" clob
