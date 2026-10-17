@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO LISTOK (cislo_listka, poradie_nastupnej_zastavky, poradie_vystupnej_zastavky, jazda_id, tarifa_id, predane_at, uctovana_cena_eur, stav, stornovane_at) VALUES (
   'L2024-0000001', 
   10, 
@@ -1209998,3 +1210000,5 @@ INSERT INTO LISTOK (cislo_listka, poradie_nastupnej_zastavky, poradie_vystupnej_
   'PLATNY', 
   NULL
 );
+
+COMMIT;

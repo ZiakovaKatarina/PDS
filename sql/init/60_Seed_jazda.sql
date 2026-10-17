@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO JAZDA (jazda_id, vin_cislo_vozidla, linka_id, osobne_cislo_vodica, stav, planovany_odchod) VALUES (
   1, 
   'WDB001XS8B5Z7B41T', 
@@ -18590,3 +18592,5 @@ INSERT INTO JAZDA (jazda_id, vin_cislo_vozidla, linka_id, osobne_cislo_vodica, s
   'DOKONCENA', 
   TO_DATE('2024-06-30 23:28:00', 'YYYY-MM-DD HH24:MI:SS')
 );
+
+COMMIT;

@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO LINKA (linka_id, cislo, smer) VALUES (
   'L105808D8', 
   105808, 
@@ -333,3 +335,5 @@ INSERT INTO LINKA (linka_id, cislo, smer) VALUES (
   902, 
   'Bratislava - Berg bei Wolfsthal - Kittsee - Edelstal - Prellenkirchen'
 );
+
+COMMIT;

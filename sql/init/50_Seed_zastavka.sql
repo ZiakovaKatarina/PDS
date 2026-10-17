@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO ZASTAVKA (zastavka_id, nazov, BEZBARIEROVY_PRISTUP, obec, psc) VALUES (
   782004, 
   'Bratislava, Patrónka', 
@@ -7943,3 +7945,5 @@ INSERT INTO ZASTAVKA (zastavka_id, nazov, BEZBARIEROVY_PRISTUP, obec, psc) VALUE
   'Bratislava', 
   '811 02'
 );
+
+COMMIT;

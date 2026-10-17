@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO DOKUMENT_VODICA (dokument_id, osobne_cislo_vodica, typ_dokumentu, datum_vydania, platnost_do, vysledok, nazov_suboru, typ_suboru, obsah, nahrane_at, popis) VALUES (
   1, 
   'VOD-2023-001', 
@@ -258,3 +260,5 @@ INSERT INTO DOKUMENT_VODICA (dokument_id, osobne_cislo_vodica, typ_dokumentu, da
   TO_DATE('2024-03-02 08:25:00', 'YYYY-MM-DD HH24:MI:SS'), 
   'Vstupné psychotesty'
 );
+
+COMMIT;

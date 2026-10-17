@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO SERVISNY_ZASAH (zasah_id, vin_cislo_vozidla, udalost_id, typ, planovany_zaciatok, planovany_koniec, skutocny_zaciatok, skutocny_koniec, stav, servis, popis_prac, naklady_eur) VALUES (
   1, 
   'WDB001XS8B5Z7B41T', 
@@ -278,3 +280,5 @@ INSERT INTO SERVISNY_ZASAH (zasah_id, vin_cislo_vozidla, udalost_id, typ, planov
   'Plánované čistenie interiéru zrušené z prevádzkových dôvodov', 
   0.0
 );
+
+COMMIT;

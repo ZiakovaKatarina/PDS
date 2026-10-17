@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO TARIFA (tarifa_id, typ_tarify, platnost_od, platnost_do, vzdialenost_od_km, vzdialenost_do_km, cena_eur) VALUES (
   1, 
   'PLNE', 
@@ -178,3 +180,5 @@ INSERT INTO TARIFA (tarifa_id, typ_tarify, platnost_od, platnost_do, vzdialenost
   150, 
   1.9
 );
+
+COMMIT;

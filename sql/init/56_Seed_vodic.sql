@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO VODIC (osobne_cislo, meno, priezvisko, email, telefon, aktivny) VALUES (
   'VOD-2023-001', 
   'Peter', 
@@ -158,3 +160,5 @@ INSERT INTO VODIC (osobne_cislo, meno, priezvisko, email, telefon, aktivny) VALU
   905345678.0, 
   1
 );
+
+COMMIT;

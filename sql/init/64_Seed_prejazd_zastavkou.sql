@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO PREJAZD_ZASTAVKOU (jazda_id, poradie_na_jazde, zastavka_id, vzdialenost_od_zaciatku_km, planovany_prichod, planovany_odchod, skutocny_prichod, skutocny_odchod) VALUES (
   1, 
   1, 
@@ -408238,3 +408240,5 @@ INSERT INTO PREJAZD_ZASTAVKOU (jazda_id, poradie_na_jazde, zastavka_id, vzdialen
   TO_DATE('2024-07-01 00:47:00', 'YYYY-MM-DD HH24:MI:SS'), 
   TO_DATE('2024-07-01 00:47:00', 'YYYY-MM-DD HH24:MI:SS')
 );
+
+COMMIT;

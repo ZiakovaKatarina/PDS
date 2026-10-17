@@ -18,6 +18,7 @@ services:
       - oracle-data:/opt/oracle/oradata # volume managed by docker `docker volume inspect oracle-data` to inspect locations
       # - ./oracle-data:/opt/oracle/oradata # mounted from system filesystem
       - ./init:/container-entrypoint-initdb.d:ro
+      - ../sql/init:/db_init_sql:ro
       #- ./init:/container-entrypoint-initdb.d
 
 volumes:

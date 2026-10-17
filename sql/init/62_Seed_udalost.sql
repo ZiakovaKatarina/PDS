@@ -1,3 +1,5 @@
+SET AUTOCOMMIT OFF;
+
 INSERT INTO UDALOST (udalost_id, vin_cislo_vozidla, osobne_cislo_vodica, typ, vznik_at, nahlasene_at, nazov, popis, zavaznost, blokuje_prevadzku, stav, uzavrete_at) VALUES (
   1, 
   'WDB001XS8B5Z7B41T', 
@@ -278,3 +280,5 @@ INSERT INTO UDALOST (udalost_id, vin_cislo_vozidla, osobne_cislo_vodica, typ, vz
   'NAHLASENA', 
   NULL
 );
+
+COMMIT;
